@@ -7,12 +7,4 @@ import android.content.Context
 open class BaseViewModel(app: Application) : AndroidViewModel(app) {
 
 
-
-    fun onDestroy(context: Context?) {
-
-    }
-
-    fun onStop(context: Context?) {
-
-    }
 }

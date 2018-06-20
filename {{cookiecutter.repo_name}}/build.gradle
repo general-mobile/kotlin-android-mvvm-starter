@@ -45,6 +45,7 @@ ext{
     paging_version = "1.0.0"
     coroutines_version = "0.22.5"
     anko_version = "0.10.4"
+    android_ktx_version = "1.0.0-alpha1"
 
     //supportLib
     supportLib = "com.android.support:support-v4:$supportLibVersion"
@@ -79,6 +80,9 @@ ext{
 
     //picasso
     picasso = "com.squareup.picasso:picasso:$picassoVersion"
+
+    //android ktx
+    android_ktx = "implementation 'androidx.core:core-ktx:$android_ktx_version"
 
     buildTime = new Date().format("yyyy-MM-dd'T'HH:mm'Z'", TimeZone.getTimeZone("UTC"))
 }

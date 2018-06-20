@@ -119,6 +119,11 @@ dependencies {
     implementation "org.jetbrains.anko:anko-coroutines:$anko_version"
             {% endif %}
 
+    {% if cookiecutter.android_ktx == "y" %}
+    //picasso
+    implementation rootProject.ext.android_ktx
+    {% endif %}
+
     //arch-comp Lifecycles, LiveData, and ViewModel
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
     implementation "android.arch.lifecycle:common-java8:$lifecycle_version"
