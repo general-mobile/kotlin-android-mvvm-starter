@@ -1,0 +1,89 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.50'
+    repositories {
+        google()
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+    }
+}
+
+ext{
+
+    buildToolsVersion = '27.0.3'
+    compileSdkVersion = 27
+    targetSdkVersion = 27
+    minSdkVersion = 19
+
+    supportLibVersion = '27.1.0'
+    rxJavaVersion = '2.1.14'
+    rxKotlinVersion = '2.2.0'
+    timberVersion = '4.7.0'
+    daggerVersion = '2.15'
+    retrofitVersion = '2.4.0'
+    okHttpVersion = '3.10.0'
+    picassoVersion = '2.71828'
+    crashlyticsVersion = '2.9.4'
+    gsonVersion = '2.8.5'
+    lifecycle_version = "1.1.1"
+    room_version = "1.1.1"
+    paging_version = "1.0.0"
+    coroutines_version = "0.22.5"
+    anko_version = "0.10.4"
+
+    //supportLib
+    supportLib = "com.android.support:support-v4:$supportLibVersion"
+    supportLibAppCompat = "com.android.support:appcompat-v7:$supportLibVersion"
+    supportLibDesign = "com.android.support:design:$supportLibVersion"
+    supportLibRecyclerview = "com.android.support:recyclerview-v7:$supportLibVersion"
+    supportLibCardview = "com.android.support:cardview-v7:$supportLibVersion"
+
+    //rx
+    rxJava = "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    rxAndroid = "io.reactivex.rxjava2:rxandroid:2.0.1"
+    rxKotlin = "io.reactivex.rxjava2:rxkotlin:$rxKotlinVersion"
+
+    //timber
+    timber = "com.jakewharton.timber:timber:$timberVersion"
+
+    //crashlytics
+    crashlytics = "com.crashlytics.sdk.android:crashlytics:$crashlyticsVersion@aar"
+
+    //dagger
+    dagger = "com.google.dagger:dagger-android:$daggerVersion"
+    daggerSupport = "com.google.dagger:dagger-android-support:$daggerVersion" // if you use the support libraries
+    daggerAnnotation = "com.google.dagger:dagger-android-processor:$daggerVersion" //for annotationProcessor
+    daggerApt = "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    //net
+    retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    okHttp = "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    gson = "com.google.code.gson:gson:$gsonVersion"
+    rxJavaAdapter = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    gsonConverter = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    //picasso
+    picasso = "com.squareup.picasso:picasso:$picassoVersion"
+
+    buildTime = new Date().format("yyyy-MM-dd'T'HH:mm'Z'", TimeZone.getTimeZone("UTC"))
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

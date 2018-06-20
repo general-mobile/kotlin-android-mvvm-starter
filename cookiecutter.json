@@ -1,0 +1,17 @@
+{
+  "project_name": "kotlin-mvvm-starter-project",
+  "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "min_sdk": 16,
+  "target_sdk": 27,
+  "package_name": "com.generalmobile.app.{{ cookiecutter.project_name|lower|replace(' ', '')|replace('-', '') }}",
+  "description": "A short description of the project.",
+  "author": "General Mobile",
+  "email": "generalmobiledev@gmail.com",
+  "version": "1.0.0",
+  "splash_screen": "n",
+  "retrofit": "n",
+  "picasso": "n",
+  "kotlin_android_extensions": "n",
+  "anko": "n",
+  "coroutines": "n"
+}
