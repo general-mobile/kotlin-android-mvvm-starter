@@ -119,7 +119,7 @@ dependencies {
     implementation "org.jetbrains.anko:anko-coroutines:$anko_version"
             {% endif %}
 
-    {% if cookiecutter.android_ktx == "y" %}
+    {% if cookiecutter.kotlin_android_extensions == "y" %}
     //picasso
     implementation rootProject.ext.android_ktx
     {% endif %}
