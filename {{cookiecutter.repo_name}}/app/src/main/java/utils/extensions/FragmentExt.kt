@@ -1,4 +1,4 @@
-package com.sahibinden.arch.util.extension
+package {{ cookiecutter.package_name }}.utils.extensions
 
 import android.support.v4.app.Fragment
 import android.support.v7.app.AlertDialog
