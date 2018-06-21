@@ -13,12 +13,11 @@ abstract class BaseAdapter<T>(callback: DiffUtil.ItemCallback<T>) : ListAdapter<
         bind(holder.binding, position)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder<ViewDataBinding> {
-        return getViewHolder(parent, viewType)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = getViewHolder(parent, viewType)
 
     open fun getViewHolder(parent: ViewGroup, viewType: Int) = BaseViewHolder(createBinding(parent, viewType))
 
     abstract fun createBinding(parent: ViewGroup, viewType: Int): ViewDataBinding
+
     protected abstract fun bind(binding: ViewDataBinding, position: Int)
 }
