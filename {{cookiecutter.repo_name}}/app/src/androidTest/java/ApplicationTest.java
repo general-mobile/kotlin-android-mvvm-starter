@@ -1,13 +1,26 @@
-package {{ cookiecutter.package_name }};
+package {{ cookiecutter.package_name }}
 
-import android.app.Application;
-import android.test.ApplicationTestCase;
+import android.support.test.InstrumentationRegistry
+import android.support.test.runner.AndroidJUnit4
+
+import org.junit.Test
+import org.junit.runner.RunWith
+
+import org.junit.Assert.*
 
 /**
- * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
+ * Instrumented test, which will execute on an Android device.
+ *
+ * @see [Testing documentation](http://d.android.com/tools/testing)
  */
-public class ApplicationTest extends ApplicationTestCase<Application> {
-    public ApplicationTest() {
-        super(Application.class);
+@RunWith(AndroidJUnit4::class)
+class ExampleInstrumentedTest {
+    @Test
+    @Throws(Exception::class)
+    fun useAppContext() {
+        // Context of the app under test.
+        val appContext = InstrumentationRegistry.getTargetContext()
+
+        assertEquals("{{ cookiecutter.package_name }}", appContext.packageName)
     }
 }
