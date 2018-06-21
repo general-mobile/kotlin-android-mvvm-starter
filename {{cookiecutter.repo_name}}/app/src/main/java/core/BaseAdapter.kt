@@ -6,7 +6,7 @@ import android.support.v7.util.DiffUtil
 import android.view.ViewGroup
 import {{ cookiecutter.package_name }}.R
 
-abstract class BaseAdapter<T>(val callback: DiffUtil.ItemCallback<T>) : ListAdapter<T, BaseViewHolder<ViewDataBinding>>(callback) {
+abstract class BaseAdapter<T>(callback: DiffUtil.ItemCallback<T>) : ListAdapter<T, BaseViewHolder<ViewDataBinding>>(callback) {
 
     override fun onBindViewHolder(holder: BaseViewHolder<ViewDataBinding>, position: Int) {
         (holder as BaseViewHolder<*>).binding.root.setTag(R.string.position, position)
