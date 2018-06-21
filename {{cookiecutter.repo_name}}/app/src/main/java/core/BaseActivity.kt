@@ -6,53 +6,41 @@ import android.databinding.ViewDataBinding
 import android.os.Bundle
 import android.support.annotation.LayoutRes
 import android.support.v7.app.AppCompatActivity
-import android.view.MenuItem
-import {{ cookiecutter.package_name }}.R
 
-abstract class BaseActivity<VM : BaseViewModel, DB : ViewDataBinding>(private val viewModelClass: Class<VM>) : AppCompatActivity() {
+abstract class BaseActivity<VM : BaseViewModel, DB : ViewDataBinding>(private val mViewModelClass: Class<VM>) : AppCompatActivity() {
+
     @LayoutRes
     abstract fun getLayoutRes(): Int
 
-    lateinit var viewModel: VM
-    lateinit var mBinding: DB
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        onInject()
-        mBinding = DataBindingUtil.setContentView(this, getLayoutRes())
-        viewModel = getViewM()
+    val binding by lazy {
+        DataBindingUtil.setContentView(this, getLayoutRes()) as DB
     }
 
-    private fun getViewM(): VM {
-        return ViewModelProviders.of(this).get(viewModelClass)
+    val viewModel by lazy {
+        ViewModelProviders.of(this).get(mViewModelClass)
     }
 
+    /**
+     * If you want to inject Dependency Injection
+     * on your activity, you can override this.
+     */
     open fun onInject() {}
 
-    override fun onPause() {
-        super.onPause()
+    override fun onCreate(savedInstanceState: Bundle?) {
+        initViewModel(viewModel)
+
+        super.onCreate(savedInstanceState)
+
+        onInject()
     }
 
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onOptionsItemSelected(menuItem: MenuItem): Boolean {
-        if (menuItem.itemId == android.R.id.home) {
-            finish()
-        }
-        return super.onOptionsItemSelected(menuItem)
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        viewModel.onDestroy(this)
-    }
-
-    override fun onStop() {
-        super.onStop()
-        viewModel.onStop(this)
-    }
+    /**
+     *
+     *  You need override this method.
+     *  And you need to set viewModel to binding: binding.viewModel = viewModel
+     *
+     */
+    abstract fun initViewModel(viewModel: VM)
 }
 
 
