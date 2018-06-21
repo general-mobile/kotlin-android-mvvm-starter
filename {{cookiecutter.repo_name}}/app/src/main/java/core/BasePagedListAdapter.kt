@@ -8,17 +8,20 @@ import android.support.v7.widget.RecyclerView
 import android.view.ViewGroup
 import {{ cookiecutter.package_name }}.R
 
-
 abstract class BasePagedListAdapter(diffCallback: DiffUtil.ItemCallback<BaseEntity> = BaseDiffCallback()) : PagedListAdapter<BaseEntity, RecyclerView.ViewHolder>(diffCallback) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder = getViewHolder(parent, viewType)
+
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         (holder as BaseViewHolder<*>).binding.root.setTag(R.string.position, position)
         bind(holder.binding, position)
     }
 
     open fun getViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder = BaseViewHolder(createBinding(parent, viewType))
+
     abstract fun createBinding(parent: ViewGroup, viewType: Int): ViewDataBinding
+
     protected abstract fun bind(binding: ViewDataBinding, position: Int)
+
     fun setList(list: PagedList<*>?) {
         submitList(list as PagedList<BaseEntity>?)
     }

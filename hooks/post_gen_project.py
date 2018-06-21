@@ -31,6 +31,8 @@ if '{{ cookiecutter.splash_screen }}' != 'y':
 
 if '{{ cookiecutter.retrofit }}' != 'y':
     os.remove('di/module/NetModule.kt')
+    os.remove('utils/service/CallbackWrapper.kt')
+    os.remove('utils/service')
 
 base = os.path.join(root_src_dir,"core")
 di = os.path.join(root_src_dir,"di")

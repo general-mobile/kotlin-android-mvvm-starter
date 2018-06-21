@@ -1,7 +1,6 @@
 package {{ cookiecutter.package_name }}.ui.main
 
 import android.app.Application
-import android.arch.lifecycle.AndroidViewModel
 import {{ cookiecutter.package_name }}.db.AppDatabase
 import {{ cookiecutter.package_name }}.R
 import {{ cookiecutter.package_name }}.App
@@ -15,8 +14,7 @@ class MainActivityViewModel(app: Application) : BaseViewModel(app) {
     lateinit var db: AppDatabase
 
     init {
-        if (app is App)
-            app.component.inject(this)
+        (app as? App)?.component?.inject(this)
     }
 
     fun getAppName() = getApplication<Application>().resources.getString(R.string.app_name)
