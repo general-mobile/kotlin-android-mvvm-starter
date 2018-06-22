@@ -36,13 +36,4 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding>(private va
         return mBinding.root
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        viewModel.onDestroy(context)
-    }
-
-    override fun onStop() {
-        super.onStop()
-        viewModel.onStop(context)
-    }
 }
