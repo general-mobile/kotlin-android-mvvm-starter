@@ -11,6 +11,9 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+{% if cookiecutter.kotlin_android_extensions == "y" %}
+apply plugin: 'kotlin-android-extensions'
+{% endif %}
 
 def STRING = 'String'
 def BUILD_TIME = 'BUILD_TIME'
