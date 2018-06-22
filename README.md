@@ -1,4 +1,4 @@
-# Android Kotlin MVVMM Starter
+# Android Kotlin MVVM Starter
 
 [![Platform](https://img.shields.io/badge/platform-Android-green.svg)](http://developer.android.com/index.html)
 

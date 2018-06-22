@@ -11,9 +11,6 @@ buildscript {
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
-{% if cookiecutter.kotlin_android_extensions == "y" %}
-apply plugin: 'kotlin-android-extensions'
-{% endif %}
 
 def STRING = 'String'
 def BUILD_TIME = 'BUILD_TIME'
@@ -119,10 +116,6 @@ dependencies {
     implementation "org.jetbrains.anko:anko-coroutines:$anko_version"
             {% endif %}
 
-    {% if cookiecutter.kotlin_android_extensions == "y" %}
-    //picasso
-    implementation rootProject.ext.android_ktx
-    {% endif %}
 
     //arch-comp Lifecycles, LiveData, and ViewModel
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
@@ -133,7 +126,8 @@ dependencies {
     //Paging
     implementation "android.arch.paging:runtime:$paging_version"
 
-    kapt "com.android.databinding:compiler:3.1.0"
+    // data binding
+    kapt "com.android.databinding:compiler:3.1.3"
 
     //test
     testImplementation 'junit:junit:4.12'

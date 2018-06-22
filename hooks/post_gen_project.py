@@ -10,7 +10,7 @@ package_dir = '{{ cookiecutter.package_name }}'.replace('.', '/')
 
 os.chdir(os.path.join("app","src","androidTest","java"))
 os.makedirs(package_dir)
-shutil.move('ApplicationTest.java', package_dir + '/ApplicationTest.java')
+shutil.move('ApplicationTest.kt', package_dir + '/ApplicationTest.kt')
 
 os.chdir(os.path.join(project_dir,"app","src","main","java"))
 os.makedirs(package_dir)
@@ -18,7 +18,7 @@ os.makedirs(package_dir)
 
 os.chdir(os.path.join(project_dir,"app","src","test","java"))
 os.makedirs(package_dir)
-shutil.move('ExampleUnitTest.java', package_dir + '/ExampleUnitTest.java')
+shutil.move('ExampleUnitTest.kt', package_dir + '/ExampleUnitTest.kt')
 
 os.chdir(os.path.join(project_dir,"app","src","main","java",package_dir))
 os.chdir(os.path.join(project_dir,"app","src","main","java"))

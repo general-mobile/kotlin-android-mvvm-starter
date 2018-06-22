@@ -11,7 +11,6 @@
   "splash_screen": "n",
   "retrofit": "n",
   "picasso": "n",
-  "kotlin_android_extensions": "n",
   "anko": "n",
   "coroutines": "n"
 }
