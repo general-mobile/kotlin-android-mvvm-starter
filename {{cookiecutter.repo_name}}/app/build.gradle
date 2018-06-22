@@ -120,8 +120,8 @@ dependencies {
             {% endif %}
 
     {% if cookiecutter.kotlin_android_extensions == "y" %}
-    //picasso
-    implementation rootProject.ext.android_ktx
+    //kotlin ktx extention
+    implementation rootProject.ext.android_ktx_version
     {% endif %}
 
     //arch-comp Lifecycles, LiveData, and ViewModel
@@ -133,7 +133,7 @@ dependencies {
     //Paging
     implementation "android.arch.paging:runtime:$paging_version"
 
-    kapt "com.android.databinding:compiler:3.1.0"
+    kapt "com.android.databinding:compiler:3.1.3"
 
     //test
     testImplementation 'junit:junit:4.12'
