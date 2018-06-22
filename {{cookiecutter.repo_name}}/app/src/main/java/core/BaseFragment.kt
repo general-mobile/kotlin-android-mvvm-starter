@@ -11,29 +11,31 @@ import android.view.View
 import android.view.ViewGroup
 
 abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding>(private val mViewModelClass: Class<VM>) : Fragment() {
-    lateinit var viewModel: VM
-    open lateinit var mBinding: DB
-    fun init(inflater: LayoutInflater, container: ViewGroup) {
-        mBinding = DataBindingUtil.inflate(inflater, getLayoutRes(), container, false)
-    }
 
-    open fun init() {}
     @LayoutRes
     abstract fun getLayoutRes(): Int
 
-    private fun getViewM(): VM = ViewModelProviders.of(this).get(mViewModelClass)
+    val binding by lazy {
+        DataBindingUtil.setContentView(this, getLayoutRes()) as DB
+    }
+
+    val viewModel by lazy {
+        ViewModelProviders.of(this).get(mViewModelClass)
+    }
+
+    /**
+     * If you want to inject Dependency Injection
+     * on your activity, you can override this.
+     */
     open fun onInject() {}
+
     override fun onCreate(savedInstanceState: Bundle?) {
+        initViewModel(viewModel)
+
         super.onCreate(savedInstanceState)
-        viewModel = getViewM()
+
+        onInject()
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
-        init(inflater, container!!)
-        init()
-        super.onCreateView(inflater, container, savedInstanceState)
-        return mBinding.root
-    }
-
+    abstract fun initViewModel(viewModel: VM)
 }
