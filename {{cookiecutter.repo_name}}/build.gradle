@@ -82,7 +82,7 @@ ext{
     picasso = "com.squareup.picasso:picasso:$picassoVersion"
 
     //android ktx
-    android_ktx = "implementation 'androidx.core:core-ktx:$android_ktx_version"
+    android_ktx = "androidx.core:core-ktx:$android_ktx_version"
 
     buildTime = new Date().format("yyyy-MM-dd'T'HH:mm'Z'", TimeZone.getTimeZone("UTC"))
 }
