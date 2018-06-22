@@ -119,10 +119,6 @@ dependencies {
     implementation "org.jetbrains.anko:anko-coroutines:$anko_version"
             {% endif %}
 
-    {% if cookiecutter.kotlin_android_extensions == "y" %}
-    //kotlin ktx extention
-    implementation rootProject.ext.android_ktx_version
-    {% endif %}
 
     //arch-comp Lifecycles, LiveData, and ViewModel
     implementation "android.arch.lifecycle:extensions:$lifecycle_version"
@@ -133,6 +129,7 @@ dependencies {
     //Paging
     implementation "android.arch.paging:runtime:$paging_version"
 
+    // data binding
     kapt "com.android.databinding:compiler:3.1.3"
 
     //test
