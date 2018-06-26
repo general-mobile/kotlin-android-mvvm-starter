@@ -16,7 +16,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding>(private va
     abstract fun getLayoutRes(): Int
 
     val binding by lazy {
-        DataBindingUtil.setContentView(this, getLayoutRes()) as DB
+        DataBindingUtil.setContentView(activity!!, getLayoutRes()) as DB
     }
 
     val viewModel by lazy {
