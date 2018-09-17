@@ -33,7 +33,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding>(private va
         init(inflater, container!!)
         init()
         super.onCreateView(inflater, container, savedInstanceState)
-        return binding.root
+        return mBinding.root
     }
 
     open fun refresh() {}
