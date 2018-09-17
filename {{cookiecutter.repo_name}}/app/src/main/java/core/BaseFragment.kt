@@ -12,7 +12,7 @@ import android.view.ViewGroup
 
 abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding>(private val mViewModelClass: Class<VM>) : Fragment() {
     lateinit var viewModel: VM
-    open lateinit var binding: DB
+    open lateinit var mBinding: DB
     fun init(inflater: LayoutInflater, container: ViewGroup) {
         mBinding = DataBindingUtil.inflate(inflater, getLayoutRes(), container, false)
     }
