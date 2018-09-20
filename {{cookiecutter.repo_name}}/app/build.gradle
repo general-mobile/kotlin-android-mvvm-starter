@@ -65,7 +65,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //supportLib
-    implementation "ndroidx.legacy:legacy-support-v4:$support_version"
+    implementation "androidx.legacy:legacy-support-v4:$support_version"
     implementation "androidx.appcompat:appcompat:$support_version"
     implementation "com.google.android.material:material:$support_version"
     implementation "androidx.recyclerview:recyclerview:$support_version"
@@ -127,7 +127,7 @@ dependencies {
     implementation "android.arch.paging:runtime:$paging_version"
 
     // data binding
-    annotationProcessor "com.android.databinding:compiler:3.1.3"
+    kapt "com.android.databinding:compiler:3.1.3"
 
     //test
     testImplementation 'junit:junit:4.12'
