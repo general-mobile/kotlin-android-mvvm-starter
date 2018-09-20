@@ -1,19 +1,16 @@
 package {{ cookiecutter.package_name }}.utils.extensions
 
-import android.content.res.ColorStateList
-import android.databinding.DataBindingUtil
-import android.databinding.ViewDataBinding
-import android.os.Build
-import android.support.annotation.LayoutRes
-import android.support.design.widget.TextInputLayout
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.CardView
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.widget.EditText
+import androidx.annotation.LayoutRes
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
+import com.google.android.material.textfield.TextInputLayout
 
 fun ViewGroup.inflate(@LayoutRes resourceId: Int) =
         LayoutInflater.from(context).inflate(

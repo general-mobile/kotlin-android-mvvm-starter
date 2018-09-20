@@ -1,8 +1,8 @@
 package {{ cookiecutter.package_name }}.db.dao
 
-import android.arch.lifecycle.LiveData
-import android.arch.persistence.room.*
-import android.arch.persistence.room.OnConflictStrategy.REPLACE
+import androidx.lifecycle.LiveData
+import androidx.room.*
+import androidx.room.OnConflictStrategy.REPLACE
 import {{ cookiecutter.package_name }}.db.entities.Example
 
 @Dao

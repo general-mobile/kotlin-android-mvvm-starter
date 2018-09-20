@@ -1,8 +1,5 @@
 package {{ cookiecutter.package_name }}.ui.main
 
-import android.arch.lifecycle.ViewModelProviders
-import android.databinding.DataBindingUtil
-import android.os.Bundle
 import {{ cookiecutter.package_name }}.R
 import {{ cookiecutter.package_name }}.core.BaseActivity
 import {{ cookiecutter.package_name }}.databinding.ActivityMainBinding

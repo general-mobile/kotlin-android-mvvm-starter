@@ -2,7 +2,7 @@
   "project_name": "kotlin-mvvm-starter-project",
   "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
   "min_sdk": 16,
-  "target_sdk": 27,
+  "target_sdk": 28,
   "package_name": "com.generalmobile.app.{{ cookiecutter.project_name|lower|replace(' ', '')|replace('-', '') }}",
   "description": "A short description of the project.",
   "author": "General Mobile",

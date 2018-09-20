@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.25.2'
+        classpath 'io.fabric.tools:gradle:1.25.4'
     }
 }
 
@@ -23,7 +23,7 @@ repositories {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion "27.0.3"
+    buildToolsVersion "28.0.2"
 
     defaultConfig {
         applicationId "{{ cookiecutter.package_name }}"
@@ -65,11 +65,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //supportLib
-    implementation rootProject.ext.supportLib
-    implementation rootProject.ext.supportLibAppCompat
-    implementation rootProject.ext.supportLibDesign
-    implementation rootProject.ext.supportLibRecyclerview
-    implementation rootProject.ext.supportLibCardview
+    implementation "androidx.legacy:legacy-support-v4:$support_version"
+    implementation "androidx.appcompat:appcompat:$support_version"
+    implementation "com.google.android.material:material:$support_version"
+    implementation "androidx.recyclerview:recyclerview:$support_version"
+    implementation "androidx.cardview:cardview:$support_version"
 
     //timber
     implementation rootProject.ext.timber
@@ -127,8 +127,8 @@ dependencies {
     implementation "android.arch.paging:runtime:$paging_version"
 
     // data binding
-    kapt "com.android.databinding:compiler:3.1.3"
-
+    annotationProcessor "com.android.databinding:compiler:3.1.4"
+    
     //test
     testImplementation 'junit:junit:4.12'
     testImplementation "android.arch.core:core-testing:$lifecycle_version"

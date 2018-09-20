@@ -1,6 +1,6 @@
 package {{ cookiecutter.package_name }}.di.module
 
-import android.arch.persistence.room.Room
+import androidx.room.Room
 import android.content.Context
 import {{ cookiecutter.package_name }}.db.AppDatabase
 import dagger.Module
