@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/MVVM-Starter.iml" filepath="$PROJECT_DIR$/.idea/MVVM-Starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/main.iml" filepath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/main.iml" />
     </modules>
   </component>
 </project>

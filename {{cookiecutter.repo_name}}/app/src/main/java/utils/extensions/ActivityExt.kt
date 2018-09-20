@@ -1,7 +1,7 @@
 package {{ cookiecutter.package_name }}.utils.extensions
 
 import android.app.Activity
-import android.support.v7.app.AlertDialog
+import androidx.appcompat.app.AlertDialog
 import android.widget.Toast
 
 fun Activity.toast(message: CharSequence, duration: Int = Toast.LENGTH_SHORT) =

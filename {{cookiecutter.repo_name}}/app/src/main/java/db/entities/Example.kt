@@ -1,9 +1,8 @@
 package {{ cookiecutter.package_name }}.db.entities
 
-import android.arch.persistence.room.Entity
-import android.arch.persistence.room.PrimaryKey
-import android.arch.persistence.room.TypeConverters
-import java.util.*
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 
 
 @Entity()
