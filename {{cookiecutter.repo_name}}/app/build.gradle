@@ -65,11 +65,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
     //supportLib
-    implementation 'androidx.legacy:legacy-support-v4:$support_version'
-    implementation 'androidx.appcompat:appcompat:$support_version'
-    implementation 'com.google.android.material:material:$support_version'
-    implementation 'androidx.recyclerview:recyclerview:$support_version'
-    implementation 'androidx.cardview:cardview:$support_version'
+    implementation "ndroidx.legacy:legacy-support-v4:$support_version"
+    implementation "androidx.appcompat:appcompat:$support_version"
+    implementation "com.google.android.material:material:$support_version"
+    implementation "androidx.recyclerview:recyclerview:$support_version"
+    implementation "androidx.cardview:cardview:$support_version"
 
     //timber
     implementation rootProject.ext.timber
