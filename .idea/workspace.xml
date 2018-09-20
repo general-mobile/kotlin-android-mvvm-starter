@@ -7,32 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b44e6eb-bd90-46a8-9df0-2fd2e3815392" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MVVM-Starter.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseDiffCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseDiffCallback.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BasePagedListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BasePagedListAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseViewHolder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseViewHolder.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/core/BaseViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/db/AppDatabase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/db/AppDatabase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/db/dao/ExampleDao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/db/dao/ExampleDao.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/db/entities/Example.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/db/entities/Example.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/di/module/DatabaseModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/di/module/DatabaseModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/ui/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/ui/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/ui/splash/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/ui/splash/SplashActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ActivityExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ActivityExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ContextExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ContextExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/FragmentExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/FragmentExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ViewExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ViewExt.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cookiecutter.json" beforeDir="false" afterPath="$PROJECT_DIR$/cookiecutter.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -90,10 +65,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cookiecutter.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cookiecutter.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cookiecutter.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state />
+            <state relative-caret-position="72">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -104,7 +81,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2711" />
@@ -154,6 +131,7 @@
         <option value="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ContextExt.kt" />
         <option value="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/FragmentExt.kt" />
         <option value="$PROJECT_DIR$/{{cookiecutter.repo_name}}/app/src/main/java/utils/extensions/ViewExt.kt" />
+        <option value="$PROJECT_DIR$/cookiecutter.json" />
       </list>
     </option>
   </component>
@@ -294,7 +272,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="1969" y="25" width="1871" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -302,15 +281,15 @@
       <window_info id="Image Layers" />
       <window_info id="Build Variants" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50053364" side_tool="true" visible="true" weight="0.32982087" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50027394" side_tool="true" weight="0.3394794" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.4994664" visible="true" weight="0.32982087" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49972603" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Logcat" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24332978" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24986301" />
       <window_info anchor="bottom" id="SonarLint" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Fabric" />
@@ -514,11 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookiecutter.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state />
@@ -532,6 +506,13 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2711" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookiecutter.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+        </state>
       </provider>
     </entry>
   </component>
