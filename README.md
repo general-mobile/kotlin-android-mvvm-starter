@@ -151,7 +151,7 @@ cookiecutter https://github.com/general-mobile/kotlin-android-mvvm-starter.git -
 └── settings.gradle
 
 46 directories, 47 files
-
+```
 
 
 ## License
