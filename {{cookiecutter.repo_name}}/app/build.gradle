@@ -4,7 +4,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'io.fabric.tools:gradle:1.25.2'
+        classpath 'io.fabric.tools:gradle:1.28.0'
     }
 }
 
@@ -23,7 +23,7 @@ repositories {
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion "27.0.3"
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "{{ cookiecutter.package_name }}"
@@ -62,7 +62,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 
     //supportLib
     implementation rootProject.ext.supportLib
@@ -127,7 +127,7 @@ dependencies {
     implementation "android.arch.paging:runtime:$paging_version"
 
     // data binding
-    kapt "com.android.databinding:compiler:3.1.3"
+    annotationProcessor "com.android.databinding:compiler:3.1.3"
 
     //test
     testImplementation 'junit:junit:4.12'
