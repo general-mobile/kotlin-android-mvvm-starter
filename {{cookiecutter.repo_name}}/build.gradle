@@ -18,7 +18,7 @@ buildscript {
 
 configurations.all {
     resolutionStrategy {
-        force 'com.android.support:support-v4:27.1.0'
+        force 'com.android.support:support-v4:28.0.3'
     }
 }
 
